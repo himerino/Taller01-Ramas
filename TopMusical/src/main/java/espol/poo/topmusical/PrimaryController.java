@@ -45,8 +45,13 @@ public class PrimaryController {
             } catch (FileNotFoundException ex) {
                 ex.printStackTrace();
             }
+<<<<<<< HEAD
             Label lbT = new Label(c.getTitulo() + " \n" + c.getCantante().toUpperCase());//titulo y cantante
+=======
+            Label lbT = new Label(c.getCantante() + " - " + c.getTitulo());//Cantante y Titulo
+>>>>>>> 9414d95e8706ccee9c967357a8cbc01ec4f14b54
             lbT.setStyle("-fx-font-weight: bold;-fx-font-size: 14;");
+             
 
             hb.getChildren().addAll(lbp, iv, lbT);//agregar al hbox
 
